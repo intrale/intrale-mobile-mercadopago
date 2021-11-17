@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:mercadopago/mercadopago.dart';
+import 'package:intrale_mobile_mercadopago/intrale_mobile_mercadopago.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,8 +30,8 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion =
-          await Mercadopago.platformVersion ?? 'Unknown platform version';
+      platformVersion = await IntraleMobileMercadopago.platformVersion ??
+          'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
