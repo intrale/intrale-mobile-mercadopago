@@ -17,7 +17,11 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await IntraleMobileMercadopago.platformVersion, '42');
+  test('startPayment', () async {
+    expect(await IntraleMobileMercadopago.startPayment, '42');
+  });
+
+  test('startPayment', () async {
+    expect(await IntraleMobileMercadopago.startPayment, '42');
   });
 }

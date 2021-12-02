@@ -1,10 +1,24 @@
 group 'ar.com.intrale.mobile.mercadopago'
-version '1.0'
+version '0.0.8'
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
 
 buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
 
     dependencies {
@@ -16,13 +30,15 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+
+    compileSdkVersion 28
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -30,6 +46,19 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
+        multiDexEnabled true
     }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+
+}
+
+dependencies {
+	//implementation fileTree(dir: 'libs', include: ['*.jar'])
+	//implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'com.mercadopago.android.px:checkout:4.53.1'
 }

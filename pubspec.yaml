@@ -1,6 +1,6 @@
 name: intrale_mobile_mercadopago
-description: A new flutter plugin project.
-version: 0.0.1
+description: Integracion de aplicaciones Flutter con la pasarela de mercadopago.
+version: 0.0.8
 homepage: https://github.com/intrale/intrale-mobile-mercadopago
 
 environment:

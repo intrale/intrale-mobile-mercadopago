@@ -1,0 +1,1 @@
+flutter test test/mercadopago_test.dart

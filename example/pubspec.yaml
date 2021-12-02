@@ -1,5 +1,5 @@
-name: mercadopago_example
-description: Demonstrates how to use the mercadopago plugin.
+name: intrale_mobile_mercadopago_example
+description: Demonstrates how to use the intrale_mobile_mercadopago plugin.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -18,7 +18,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  mercadopago:
+  intrale_mobile_mercadopago:
     # When depending on this package from a real application you should use:
     #   mercadopago: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
