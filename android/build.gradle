@@ -19,10 +19,13 @@ buildscript {
         google()
         mavenCentral()
         jcenter()
+        maven {
+            setUrl("https://artifacts.mercadolibre.com/repository/android-releases/")
+        }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath 'com.android.tools.build:gradle:7.3.1'
     }
 }
 
@@ -31,6 +34,9 @@ rootProject.allprojects {
         google()
         mavenCentral()
         jcenter()
+        maven {
+            setUrl("https://artifacts.mercadolibre.com/repository/android-releases/")
+        }
     }
 }
 
@@ -38,27 +44,30 @@ apply plugin: 'com.android.library'
 
 android {
 
-    compileSdkVersion 28
+    compileSdkVersion 30
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         multiDexEnabled true
     }
 
     lintOptions {
         disable 'InvalidPackage'
+        disable 'PropertyEscape'
     }
 
 
 }
 
 dependencies {
-	//implementation fileTree(dir: 'libs', include: ['*.jar'])
-	//implementation 'androidx.annotation:annotation:1.0.0'
-    implementation 'com.mercadopago.android.px:checkout:4.53.1'
+    //implementation files('${androidx64}/flutter.jar')
+
+    implementation fileTree(dir: 'C:\\flutter\\bin\\cache\\artifacts\\engine\\android-x64', include: 'flutter.jar')
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'com.mercadopago.android.px:checkout:4.53.2'
 }

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/intrale_mobile_mercadopago.iml" filepath="$PROJECT_DIR$/.idea/modules/intrale_mobile_mercadopago.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.iml" filepath="$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.androidTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/ar.com.intrale.mobile.mercadopago.intrale_mobile_mercadopago.unitTest~1.iml" />
     </modules>
   </component>
 </project>

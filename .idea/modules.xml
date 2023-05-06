@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mercadopago.iml" filepath="$PROJECT_DIR$/mercadopago.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/mercadopago_android.iml" filepath="$PROJECT_DIR$/android/mercadopago_android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/example/android/mercadopago_example_android.iml" filepath="$PROJECT_DIR$/example/android/mercadopago_example_android.iml" />
     </modules>
   </component>
 </project>
