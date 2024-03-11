@@ -1,3 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="ar.com.intrale.mobile.mercadopago">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ar.com.intrale.mobile.mercadopago">
+
+    <application>
+        <activity android:name="ar.com.intrale.mobile.mercadopago.IntraleCheckoutActivity"
+            tools:ignore="Instantiatable"
+            android:theme="@style/MeliDialog"
+            >
+
+        </activity>
+    </application>
 </manifest>

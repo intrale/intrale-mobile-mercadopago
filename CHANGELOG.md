@@ -7,3 +7,12 @@
 
 ## 0.0.8
 * Se agrega referencia a library en build.gradle
+
+## 0.1.24
+* Se crea nueva activity para el checkout
+
+## 0.1.29
+* Uso de nuevo checkout intrale
+
+## 0.1.30
+* Se define correctamente la activity
